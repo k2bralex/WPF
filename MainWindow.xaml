@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_START.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_START"
+        mc:Ignorable="d"
+        Title="Task Viewer" Height="600" Width="1000">
+    <Grid x:Name="grid1" Visibility="Visible">
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="400*"/>
+
+        </Grid.ColumnDefinitions>
+        <TextBox Text="" Margin="0,55,0,0" x:Name="taskTextBox" FontSize="35" TextWrapping="Wrap" Background="#FF3A3939" Foreground="White" IsReadOnly="True" IsUndoEnabled="False" BorderBrush="#FF212121" Grid.Column="1"/>
+        <Label x:Name="headlineLabel" FontSize="40" FontWeight="Bold" FontStretch="Normal" FontStyle="Normal" VerticalContentAlignment="Stretch" 
+               VerticalAlignment="Top" Background="#FF212121" Height="55" Foreground="White" TextBlock.FontStyle="{DynamicResource StyleName}" Grid.Column="1"/>
+        <Grid>
+            <ListBox x:Name="viewListBox" FontSize="40" SelectionChanged="viewListBox_SelectionChanged" Background="#FF212121" Foreground="White" BorderBrush="#FF212121" Margin="0,55,0,0" />
+            <Button x:Name="startButtom" Content="Просмотреть" Background="#FF212121" BorderBrush="#FF767676" Foreground="#FFBEB9B9" HorizontalContentAlignment="Center" FontSize="40" FontWeight="DemiBold" Height="55" VerticalAlignment="Top" Click="startButtom_Click"/>
+        </Grid>
+    </Grid>
+
+
+</Window>

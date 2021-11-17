@@ -1,0 +1,19 @@
+﻿<Window x:Class="WPF_START.WindowButtoms"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_START"
+        mc:Ignorable="d"
+        Title="WindowButtoms" Height="450" Width="800">
+    <Grid ShowGridLines="False" Background="#FF6FAE69">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2.0*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Margin="2,2,2,2" ItemHeight="50" ItemWidth="100" x:Name="wrapPanel">
+
+        </WrapPanel>
+
+    </Grid>
+</Window>
