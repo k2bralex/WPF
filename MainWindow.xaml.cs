@@ -70,9 +70,10 @@ namespace WPF_START
                 case 0: WindowButtoms windowButtoms = new WindowButtoms();
                     windowButtoms.Show();
                     break;
-                //case 1: var calculator = new Calculator();
-                    //calculator.ShowDialog();
-                    //break;
+                case 1:
+                    var calculator = new Calculator.MainWindow();
+                    calculator.ShowDialog();
+                    break;
                 default:
                     break;
             }

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Simass\Source\Repos\WPF\obj\Release\netcoreapp3.1\
+C:\Users\Simass\source\repos\WPF\obj\Release\netcoreapp3.1\
 WPF_START
 none
 false
 TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\Simass\Source\Repos\WPF\App.xaml
+C:\Users\Simass\source\repos\WPF\App.xaml
 21357152398
 
 5-1048674620
-1931546597783
+193-1196034402
 MainWindow.xaml;WindowButtons.xaml;
 
 True

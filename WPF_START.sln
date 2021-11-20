@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_START", "WPF_START.csproj", "{D016433B-EF2B-406D-8884-34E77ECBC406}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF_START", "WPF_START.csproj", "{D016433B-EF2B-406D-8884-34E77ECBC406}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "..\Calculator\Calculator.csproj", "{E9D67DBE-296B-48EC-B47A-12F632726535}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telegram", "Telegram\Telegram.csproj", "{C2F37446-2BEB-4AE1-AA93-0324167CFFB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyboardSimulator", "KeyboardSimulator\KeyboardSimulator.csproj", "{6A081702-85F4-4556-A8BA-5A42284FCD90}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{44BD153D-2E32-46D6-B065-D8AE0FBA1074}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +21,18 @@ Global
 		{D016433B-EF2B-406D-8884-34E77ECBC406}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D016433B-EF2B-406D-8884-34E77ECBC406}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D016433B-EF2B-406D-8884-34E77ECBC406}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E9D67DBE-296B-48EC-B47A-12F632726535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9D67DBE-296B-48EC-B47A-12F632726535}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9D67DBE-296B-48EC-B47A-12F632726535}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9D67DBE-296B-48EC-B47A-12F632726535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F37446-2BEB-4AE1-AA93-0324167CFFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F37446-2BEB-4AE1-AA93-0324167CFFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F37446-2BEB-4AE1-AA93-0324167CFFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F37446-2BEB-4AE1-AA93-0324167CFFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A081702-85F4-4556-A8BA-5A42284FCD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A081702-85F4-4556-A8BA-5A42284FCD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A081702-85F4-4556-A8BA-5A42284FCD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A081702-85F4-4556-A8BA-5A42284FCD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BD153D-2E32-46D6-B065-D8AE0FBA1074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BD153D-2E32-46D6-B065-D8AE0FBA1074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BD153D-2E32-46D6-B065-D8AE0FBA1074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BD153D-2E32-46D6-B065-D8AE0FBA1074}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

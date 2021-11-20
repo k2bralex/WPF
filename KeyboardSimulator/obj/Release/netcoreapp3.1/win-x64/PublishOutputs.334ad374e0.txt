@@ -1,0 +1,5 @@
+C:\Users\Simass\source\repos\KeyboardSimulator\bin\Release\netcoreapp3.1\publish\KeyboardSimulator.exe
+C:\Users\Simass\source\repos\KeyboardSimulator\bin\Release\netcoreapp3.1\publish\KeyboardSimulator.dll
+C:\Users\Simass\source\repos\KeyboardSimulator\bin\Release\netcoreapp3.1\publish\KeyboardSimulator.deps.json
+C:\Users\Simass\source\repos\KeyboardSimulator\bin\Release\netcoreapp3.1\publish\KeyboardSimulator.runtimeconfig.json
+C:\Users\Simass\source\repos\KeyboardSimulator\bin\Release\netcoreapp3.1\publish\KeyboardSimulator.pdb

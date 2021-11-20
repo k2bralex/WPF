@@ -52,7 +52,7 @@ C:\Users\Simass\Source\Repos\WPF\obj\Debug\netcoreapp3.1\WPF_START.GeneratedMSBu
 C:\Users\Simass\Source\Repos\WPF\obj\Debug\netcoreapp3.1\WPF_START.AssemblyInfoInputs.cache
 C:\Users\Simass\Source\Repos\WPF\obj\Debug\netcoreapp3.1\WPF_START.AssemblyInfo.cs
 C:\Users\Simass\Source\Repos\WPF\obj\Debug\netcoreapp3.1\WPF_START.csproj.CoreCompileInputs.cache
-C:\Users\Simass\Source\Repos\WPF\obj\Debug\netcoreapp3.1\WPF_START.csproj.CopyComplete
 C:\Users\Simass\Source\Repos\WPF\obj\Debug\netcoreapp3.1\WPF_START.dll
 C:\Users\Simass\Source\Repos\WPF\obj\Debug\netcoreapp3.1\WPF_START.pdb
 C:\Users\Simass\Source\Repos\WPF\obj\Debug\netcoreapp3.1\WPF_START.genruntimeconfig.cache
+C:\Users\Simass\source\repos\WPF\obj\Debug\netcoreapp3.1\WPF_START.csproj.CopyComplete

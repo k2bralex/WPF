@@ -1,0 +1,227 @@
+﻿<Window x:Class="KeyboardSimulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KeyboardSimulator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="800">
+    <Window.Resources>
+        <ControlTemplate TargetType="Button" x:Key="ButtonStandard">
+            <Border x:Name="buttonBorder"
+					CornerRadius="6"
+		            Margin="3,3,3,3"
+		            Background="{TemplateBinding Background}">
+                <ContentControl Content="{TemplateBinding Content}" 
+                                FontSize="{TemplateBinding FontSize}"
+                                FontFamily="Verdana"
+			                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+			                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsPressed" Value="true">
+                    <Setter TargetName="buttonBorder" Property="Background" Value="GhostWhite"/>
+                    <Setter TargetName="buttonBorder" Property="BorderThickness" Value="2"/>
+                    <Setter TargetName="buttonBorder" Property="BorderBrush" Value="RoyalBlue"/>
+                </Trigger>
+
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <Style x:Key="btnGrey" TargetType="Button">
+            <Setter Property="Control.FontSize" Value="16"/>
+            <Setter Property="Background" Value="Gray"/>
+        </Style>
+        <Style x:Key="btnFontSize" TargetType="Button">
+            <Setter Property="Control.FontSize" Value="20"/>
+        </Style>
+    </Window.Resources>
+    <Viewbox Stretch="Uniform">
+        <Grid x:Name="mainGrid" ShowGridLines="False" Height="384.04" Width="800">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="buttonGrid" Grid.Row="2" ShowGridLines="False" Background="White" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="KeyRow0" ShowGridLines="False">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="`" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Salmon"/>
+                    <Button Content = "1" Grid.Column="1" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Salmon"/>
+                    <Button Content = "2" Grid.Column="2" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Salmon"/>
+                    <Button Content = "3" Grid.Column="3" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "#FFF8EF97"/>
+                    <Button Content = "4" Grid.Column="4" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content = "5" Grid.Column="5" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "DeepSkyBlue"/>
+                    <Button Content = "6" Grid.Column="6" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "DeepSkyBlue"/>
+                    <Button Content = "7" Grid.Column="7" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Orchid"/>
+                    <Button Content = "8" Grid.Column="8" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Orchid"/>
+                    <Button Content = "9" Grid.Column="9" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Salmon"/>
+                    <Button Content = "0" Grid.Column="10" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "#FFF8EF97"/>
+                    <Button Content = "-" Grid.Column="11" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content = "=" Grid.Column="12" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content="Backspace" Grid.Column="13" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}" />
+                </Grid>
+                <Grid x:Name="KeyRow1" Grid.Row="1" ShowGridLines="False">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Tab" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                    <Button Content = "q" Grid.Column="1" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Salmon"/>
+                    <Button Content = "w" Grid.Column="2" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "#FFF8EF97"/>
+                    <Button Content = "e" Grid.Column="3" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content = "r" Grid.Column="4" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "DeepSkyBlue"/>
+                    <Button Content = "t" Grid.Column="5" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "DeepSkyBlue"/>
+                    <Button Content = "y" Grid.Column="6" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Orchid"/>
+                    <Button Content = "u" Grid.Column="7" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Orchid"/>
+                    <Button Content = "i" Grid.Column="8" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Salmon"/>
+                    <Button Content = "o" Grid.Column="9" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "#FFF8EF97"/>
+                    <Button Content = "p" Grid.Column="10" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content = "[" Grid.Column="11" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content = "]" Grid.Column="12" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content = "\" Grid.Column="13" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                </Grid>
+                <Grid x:Name="KeyRow2" Grid.Row="2" ShowGridLines="False">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Caps Lock" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                    <Button Content = "a" Grid.Column="1" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Salmon"/>
+                    <Button Content = "s" Grid.Column="2" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "#FFF8EF97"/>
+                    <Button Content = "d" Grid.Column="3" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content = "f" Grid.Column="4" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "DeepSkyBlue"/>
+                    <Button Content = "g" Grid.Column="5" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "DeepSkyBlue"/>
+                    <Button Content = "h" Grid.Column="6" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Orchid"/>
+                    <Button Content = "j" Grid.Column="7" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Orchid"/>
+                    <Button Content = "k" Grid.Column="8" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Salmon"/>
+                    <Button Content = "l" Grid.Column="9" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "#FFF8EF97"/>
+                    <Button Content = ";" Grid.Column="10" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content = "'" Grid.Column="11" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content="Enter" Grid.Column="12" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                </Grid>
+                <Grid x:Name="KeyRow3" Grid.Row="3" ShowGridLines="False">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2.5*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="2.5*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Shift" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                    <Button Content = "z" Grid.Column="1" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Salmon"/>
+                    <Button Content = "x" Grid.Column="2" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "#FFF8EF97"/>
+                    <Button Content = "c" Grid.Column="3" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content = "v" Grid.Column="4" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "DeepSkyBlue"/>
+                    <Button Content = "b" Grid.Column="5" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "DeepSkyBlue"/>
+                    <Button Content = "n" Grid.Column="6" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Orchid"/>
+                    <Button Content = "m" Grid.Column="7" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Orchid"/>
+                    <Button Content = "," Grid.Column="8" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "Salmon"/>
+                    <Button Content = "." Grid.Column="9" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "#FFF8EF97"/>
+                    <Button Content = "/" Grid.Column="10" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnFontSize}" Background = "MediumSpringGreen"/>
+                    <Button Content="Shift" Grid.Column="11" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                </Grid>
+                <Grid x:Name="KeyRow4" Grid.Row="4" ShowGridLines="False">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.25*"/>
+                        <ColumnDefinition Width="1.25*"/>
+                        <ColumnDefinition Width="1.25*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="1.25*"/>
+                        <ColumnDefinition Width="1.25*"/>
+                        <ColumnDefinition Width="1.25*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Ctrl" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                    <Button Content="Win" Grid.Column="1" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                    <Button Content="Alt" Grid.Column="2" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                    <Button Content = "Space" Grid.Column="3" Template ="{StaticResource ButtonStandard}" FontSize="18" Background = "BurlyWood"/>
+                    <Button Content="Alt" Grid.Column="4" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                    <Button Content="Win" Grid.Column="5" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                    <Button Content="Ctrl" Grid.Column="6" Template ="{StaticResource ButtonStandard}" Style="{StaticResource btnGrey}"/>
+                </Grid>
+            </Grid>
+            <TextBox x:Name="textBox" Grid.Row="1" Text="Some text to type" Margin="3,0,3,0" Background="LightSkyBlue" FontSize="16" FontFamily="Verdana"/>
+            <Grid x:Name="menuGrid" ShowGridLines="False" Background="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Speed: " HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="45" VerticalContentAlignment="Center"/>
+                <TextBox HorizontalAlignment="Left" Margin="45,0,0,0" Text="0" TextWrapping="NoWrap" Width="45" HorizontalContentAlignment="Left" 
+                         VerticalContentAlignment="Center" Grid.ColumnSpan="1" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold"/>
+                <Label Content="shrs/min" HorizontalAlignment="Left" Width="45" Margin="90,0,0,0" Padding="0,0,0,0" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <Label Content="Fails: " HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="45" VerticalContentAlignment="Center" Grid.Column="1"/>
+                <TextBox HorizontalAlignment="Left" Margin="45,0,0,0" Text="0" TextWrapping="NoWrap" Width="45" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" 
+                         Grid.ColumnSpan="1" Grid.Column="1" Background="{x:Null}" BorderBrush="{x:Null}" FontWeight="Bold"/>
+                <Label Content="Difficulty: " HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="59" VerticalContentAlignment="Center" Grid.Column="2" />
+                <TextBox HorizontalAlignment="Left" Margin="59,0,0,0" Text="0" TextWrapping="NoWrap" Width="12" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" 
+                         Grid.ColumnSpan="1" Grid.Column="2" BorderBrush="{x:Null}" Background="{x:Null}" FontWeight="Bold"/>
+                <Slider Grid.Column="2" Margin="79.7,0,0,0" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" BorderBrush="{x:Null}" Foreground="#FF3F3F46" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+                <CheckBox Content="Case Sensetive" Grid.Column="3" VerticalAlignment="Center" Width="199" Height="27" HorizontalAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}" BorderBrush="Black"/>
+                <Button Content="Start" Grid.Column="2" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Background="Gray" Margin="5,0,3,3"/>
+                <Button Content="Stop" Grid.Column="3" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Background="Gray" Margin="3,0,4,3"/>
+
+            </Grid>
+
+        </Grid>
+    </Viewbox>
+</Window>
+
+
