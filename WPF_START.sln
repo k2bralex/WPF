@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KeyboardSimulator", "Keyboa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{44BD153D-2E32-46D6-B065-D8AE0FBA1074}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeTask_23_11", "..\HomeTask_23_11\HomeTask_23_11.csproj", "{28F980EA-BD97-476A-837D-56C1E22A6EBE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{44BD153D-2E32-46D6-B065-D8AE0FBA1074}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{44BD153D-2E32-46D6-B065-D8AE0FBA1074}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{44BD153D-2E32-46D6-B065-D8AE0FBA1074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28F980EA-BD97-476A-837D-56C1E22A6EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28F980EA-BD97-476A-837D-56C1E22A6EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28F980EA-BD97-476A-837D-56C1E22A6EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28F980EA-BD97-476A-837D-56C1E22A6EBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
