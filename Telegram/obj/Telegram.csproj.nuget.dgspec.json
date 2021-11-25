@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Simass\\source\\repos\\WPF\\Telegram\\Telegram.csproj": {}
+    "C:\\Users\\Simass\\Source\\Repos\\WPF\\Telegram\\Telegram.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Simass\\source\\repos\\WPF\\Telegram\\Telegram.csproj": {
+    "C:\\Users\\Simass\\Source\\Repos\\WPF\\Telegram\\Telegram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Simass\\source\\repos\\WPF\\Telegram\\Telegram.csproj",
+        "projectUniqueName": "C:\\Users\\Simass\\Source\\Repos\\WPF\\Telegram\\Telegram.csproj",
         "projectName": "Telegram",
-        "projectPath": "C:\\Users\\Simass\\source\\repos\\WPF\\Telegram\\Telegram.csproj",
+        "projectPath": "C:\\Users\\Simass\\Source\\Repos\\WPF\\Telegram\\Telegram.csproj",
         "packagesPath": "C:\\Users\\Simass\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Simass\\source\\repos\\WPF\\Telegram\\obj\\",
+        "outputPath": "C:\\Users\\Simass\\Source\\Repos\\WPF\\Telegram\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

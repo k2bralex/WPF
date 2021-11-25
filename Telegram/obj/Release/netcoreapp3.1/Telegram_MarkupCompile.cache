@@ -1,20 +1,20 @@
 ﻿Telegram
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\Simass\Source\Repos\WPF\Telegram\obj\Debug\netcoreapp3.1\
+C:\Users\Simass\Source\Repos\WPF\Telegram\obj\Release\netcoreapp3.1\
 Telegram
 none
 false
-TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
+TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\Simass\Source\Repos\WPF\Telegram\App.xaml
 11407045341
 
-613303619
+4-1582599928
 192-1533232326
 MainWindow.xaml;
 
-False
+True
 

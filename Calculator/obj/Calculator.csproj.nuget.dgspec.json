@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Simass\\source\\repos\\WPF\\Calculator\\Calculator.csproj": {}
+    "C:\\Users\\Simass\\Source\\Repos\\WPF\\Calculator\\Calculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Simass\\source\\repos\\WPF\\Calculator\\Calculator.csproj": {
+    "C:\\Users\\Simass\\Source\\Repos\\WPF\\Calculator\\Calculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Simass\\source\\repos\\WPF\\Calculator\\Calculator.csproj",
+        "projectUniqueName": "C:\\Users\\Simass\\Source\\Repos\\WPF\\Calculator\\Calculator.csproj",
         "projectName": "Calculator",
-        "projectPath": "C:\\Users\\Simass\\source\\repos\\WPF\\Calculator\\Calculator.csproj",
+        "projectPath": "C:\\Users\\Simass\\Source\\Repos\\WPF\\Calculator\\Calculator.csproj",
         "packagesPath": "C:\\Users\\Simass\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Simass\\source\\repos\\WPF\\Calculator\\obj\\",
+        "outputPath": "C:\\Users\\Simass\\Source\\Repos\\WPF\\Calculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

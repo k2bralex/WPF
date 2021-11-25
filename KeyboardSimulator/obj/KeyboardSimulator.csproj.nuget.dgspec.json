@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Simass\\source\\repos\\WPF\\KeyboardSimulator\\KeyboardSimulator.csproj": {}
+    "C:\\Users\\Simass\\Source\\Repos\\WPF\\KeyboardSimulator\\KeyboardSimulator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Simass\\source\\repos\\WPF\\KeyboardSimulator\\KeyboardSimulator.csproj": {
+    "C:\\Users\\Simass\\Source\\Repos\\WPF\\KeyboardSimulator\\KeyboardSimulator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Simass\\source\\repos\\WPF\\KeyboardSimulator\\KeyboardSimulator.csproj",
+        "projectUniqueName": "C:\\Users\\Simass\\Source\\Repos\\WPF\\KeyboardSimulator\\KeyboardSimulator.csproj",
         "projectName": "KeyboardSimulator",
-        "projectPath": "C:\\Users\\Simass\\source\\repos\\WPF\\KeyboardSimulator\\KeyboardSimulator.csproj",
+        "projectPath": "C:\\Users\\Simass\\Source\\Repos\\WPF\\KeyboardSimulator\\KeyboardSimulator.csproj",
         "packagesPath": "C:\\Users\\Simass\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Simass\\source\\repos\\WPF\\KeyboardSimulator\\obj\\",
+        "outputPath": "C:\\Users\\Simass\\Source\\Repos\\WPF\\KeyboardSimulator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

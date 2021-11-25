@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Simass\\source\\repos\\WPF\\WPF_START.csproj": {}
+    "C:\\Users\\Simass\\Source\\Repos\\WPF\\WPF_START.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Simass\\source\\repos\\WPF\\WPF_START.csproj": {
+    "C:\\Users\\Simass\\Source\\Repos\\WPF\\WPF_START.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Simass\\source\\repos\\WPF\\WPF_START.csproj",
+        "projectUniqueName": "C:\\Users\\Simass\\Source\\Repos\\WPF\\WPF_START.csproj",
         "projectName": "WPF_START",
-        "projectPath": "C:\\Users\\Simass\\source\\repos\\WPF\\WPF_START.csproj",
+        "projectPath": "C:\\Users\\Simass\\Source\\Repos\\WPF\\WPF_START.csproj",
         "packagesPath": "C:\\Users\\Simass\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Simass\\source\\repos\\WPF\\obj\\",
+        "outputPath": "C:\\Users\\Simass\\Source\\Repos\\WPF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
