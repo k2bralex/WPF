@@ -1,0 +1,79 @@
+﻿<Window x:Class="HomeTask_23_11.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HomeTask_23_11"
+        mc:Ignorable="d"
+        Title="" Height="500" Width="500" Background="SlateGray">
+    <Window.Resources>
+        <Style x:Key="gboxStyle" TargetType="GroupBox">
+            <Setter Property="BorderBrush" Value="LimeGreen"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+        <Style x:Name="rbtnStyle" TargetType="RadioButton">
+            <Style.Setters>
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                <Setter Property="Foreground" Value="Black"/>
+            </Style.Setters>
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    <Trigger.Setters>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="Foreground" Value="White"/>
+                    </Trigger.Setters>
+                    </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <Grid Width="400" Height="400" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <GroupBox Style="{StaticResource gboxStyle}" Header="Анкета" Margin="0,0,5,0">
+                <StackPanel Margin="5" Orientation="Vertical" >
+                    <TextBlock Text="Идентификационный номер" Margin="3" Foreground="White" TextAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbxId" Margin="1" IsReadOnly="True"/>
+                    <TextBlock Text="ФИО" Margin="1" Foreground="White" TextAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBox x:Name="tbxName" Margin="1"/>
+                    <TextBlock Text="Возраст" Margin="1" Foreground="White" TextAlignment="Left" VerticalAlignment="Center"/>
+                    <ComboBox x:Name="tbxAge" Margin="1" SelectedValue="0"/>
+                    <TextBlock Text="Дата рождения" Margin="1" Foreground="White" TextAlignment="Left" VerticalAlignment="Center"/>
+                    <DatePicker></DatePicker>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Grid.Row="1" Style="{StaticResource gboxStyle}" Header="Должность" Margin="0,0,5,0">
+                <UniformGrid Rows="4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="157">
+                    <RadioButton x:Name="rbtn1" GroupName="Speciality" Content="Сотрудник" VerticalAlignment="Center" IsChecked="True"/>
+                    <RadioButton x:Name="rbtn2" GroupName="Speciality" Content="Зам.начальника отдела" VerticalAlignment="Center"/>
+                    <RadioButton x:Name="rbtn3" GroupName="Speciality" Content="Начальник отдела" VerticalAlignment="Center"/>
+                    <RadioButton x:Name="rbtn4" GroupName="Speciality" Content="Директор" VerticalAlignment="Center"/>
+                </UniformGrid>
+            </GroupBox>
+
+            <GroupBox Grid.Column="1"  Style="{StaticResource gboxStyle}" Header="Отдел" Margin="5,0,0,0">
+                <UniformGrid Rows="4" HorizontalAlignment="Center" VerticalAlignment="Center" Height="157">
+                    <RadioButton x:Name="rbtnElectr" GroupName="Division" Content="Электротехнический" VerticalAlignment="Center" IsChecked="True"/>
+                    <RadioButton x:Name="rbtnMech" GroupName="Division" Content="Механический" VerticalAlignment="Center"/>
+                    <RadioButton x:Name="rbtnEngin" GroupName="Division" Content="Инженерный" VerticalAlignment="Center"/>
+                    <RadioButton x:Name="rbtnAccount" GroupName="Division" Content="Бухгалтерский" VerticalAlignment="Center"/>
+                </UniformGrid>
+            </GroupBox>
+
+            <StackPanel Orientation="Vertical" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+                <Button x:Name="btnAdd" Content="Добавить" Margin="3" Height="50"/>
+                <Button x:Name="btnClean" Content="Cбросить все" Margin="3" Height="50" Click="BtnClean_OnClick"/>
+                <Button x:Name="btnSave" Content="Отменить" Margin="3" Height="50" Click="BtnSave_OnClick"/>
+            </StackPanel>
+
+        </Grid>
+    </Viewbox>
+</Window>
